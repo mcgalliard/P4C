@@ -69,6 +69,7 @@ class Game {
   
   void checkEnemy(){
     if(millis() - mark > wait) {
+      mark = millis();
       for(int i = 0; i < sprites.alive.size(); i++){
         if(sprites.alive.get(i) instanceof Jim) {
         Jim jim = (Jim)sprites.alive.get(i);

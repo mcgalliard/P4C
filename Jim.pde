@@ -11,7 +11,7 @@ class Jim extends AbstractSprite{
   }
   
   void fire() {
-    Projectile bullet = new Projectile((x),(y),game.player.getXSpeed(), game.player.getYSpeed(), 25, 25,(100), this); 
+    Projectile bullet = new Projectile((x),(y),game.player.x, game.player.y, 25, 25,(100), this); 
     game.spawn(bullet); 
   }
   
